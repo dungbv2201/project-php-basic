@@ -1,0 +1,13 @@
+nav.navbar{
+	width: calc(100% - 300px);
+	margin-left: 300px;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	ul{
+		display: flex;
+		li.page-title{
+			margin-right: auto;
+			font-size: 24px;
+		}
+	}
+}
