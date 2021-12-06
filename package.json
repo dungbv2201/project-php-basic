@@ -1,0 +1,20 @@
+{
+  "name": "php-project",
+  "version": "1.0.0",
+  "description": "php-project",
+  "main": "webpack.mix.js",
+  "dependencies": {
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.44.0",
+    "sass-loader": "^12.3.0"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.39"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
