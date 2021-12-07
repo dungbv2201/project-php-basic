@@ -5,6 +5,7 @@
   margin-bottom: 10px;
   border-radius: 4px;
   height: 40px;
+  color: $white;
 }
 .container{
   position: relative;
@@ -24,13 +25,37 @@
         margin-bottom: 10px;
         border-radius: 4px;
         height: 40px;
-        line-height: 40px;
-        &:hover{
-          background: rgba(200,200,200,.2);
-          cursor: pointer;
+        display: flex;
+        align-items: center;
+        &.brand{
+          text-align: center;
+          height: 60px;
+          line-height: 60px;
+          margin-bottom: 30px;
+          border-bottom: 1px solid rgba(180,180,180,.3);
+          border-radius: 0;
+          .icon{
+            font-size: 30px;
+            color: $red-light;
+          }
+          .title{
+            font-size: 30px;
+          }
         }
-        &.active{
-          @include menu-active;
+        &.sidebar-item{
+          &.active{
+            @include menu-active;
+          }
+          &:not(.active):hover{
+            background: rgba(200,200,200,.2);
+            cursor: pointer;
+          }
+        }
+        .icon{
+          font-size: 24px;
+          line-height: 40px;
+          align-items: center;
+          margin-right: 5px;
         }
       }
     }
