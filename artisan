@@ -1,0 +1,25 @@
+<?php
+require_once __DIR__.'/app/connectDb.php';
+require_once __DIR__."/vendor/autoload.php";
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+switch ($_SERVER['argv'][1]){
+    case 'serve':
+        runServe();
+        break;
+    case 'migrate':
+        migrate(connectDb());
+}
+
+function runServe(){
+    echo "\e[32mHello Kitty! \e[31m<3 \e[32m \n";
+    exec('php -S 127.0.0.1:2201 -t public/');
+}
+
+function migrate($pdo){
+    require_once __DIR__.'/migrations/migrate.php';
+    echo "\e[32mHello Kitty! \e[31m<3 \e[32m \n";
+    runMigrations($pdo);
+}
