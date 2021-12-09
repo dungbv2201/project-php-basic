@@ -2,19 +2,6 @@
 
 require_once "../helpers/const.php";
 
-$routes = [
-    [
-        "url" => "/hello",
-        "handler" => "/app/handlers/client/homePage.php",
-        "action" => "index",
-        "method" => GET_METHOD,
-        "middleware" => 'auth'
-    ],
-    [
-        "url" => "/admin/users",
-        "handler" => "/app/handlers/admin/userHandler.php",
-        "action" => "index",
-        "method" => GET_METHOD,
-        "middleware" => 'auth'
-    ],
+$routeWeb = [
+
 ];

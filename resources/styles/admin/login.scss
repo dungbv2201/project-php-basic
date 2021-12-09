@@ -1,0 +1,38 @@
+@import "base/color";
+section{
+  min-height: 100vh !important;
+  margin: 0 !important;
+  position: relative;
+  h2{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .login{
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: $white;
+    padding: 60px 60px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    button{
+      background: $blue-2;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      border:none;
+      outline: none;
+      margin-top: 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      color: $white;
+      &:hover{
+        background: #0399A9FF;
+        color: black;
+      }
+    }
+  }
+}

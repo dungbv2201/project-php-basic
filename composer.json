@@ -1,0 +1,13 @@
+{
+    "name": "dungquyen/php-project",
+    "authors": [
+        {
+            "name": "Dungbv",
+            "email": "dungbv2201@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4",
+        "ext-pdo": "*"
+    }
+}
