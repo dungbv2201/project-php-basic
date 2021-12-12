@@ -13,7 +13,7 @@ $routeAdmin = [
 		"handler" => "/app/handlers/admin/userHandler.php",
 		"action" => "index",
 		"method" => GET_METHOD,
-		"middleware" => 'auth'
+//		"middleware" => 'auth'
 	],
 	[
 		"url" => "/admin/users/create",

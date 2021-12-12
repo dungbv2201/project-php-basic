@@ -9,7 +9,12 @@ function resolve($routes){
 		}
         $arrayUrl = explode('/',$route['url']);
         unset($arrayUrl[0]);
-        $arrayUri = explode(	'/',$_SERVER['REQUEST_URI']);
+		$uri = $_SERVER['REQUEST_URI'];
+		if(strpos($uri, "?")){
+			$uri = explode("?",$uri);
+			$uri = $uri[0];
+		}
+        $arrayUri = explode(	'/',$uri);
 		unset($arrayUri[0]);
 
 		if($_SERVER['REQUEST_METHOD'] === $route['method'] && (count($arrayUrl)) === count($arrayUri)){
