@@ -3,6 +3,7 @@
 @import "base/navbar";
 @import "base/_table";
 @import "base/_input";
+@import "base/button";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 *{
@@ -52,4 +53,13 @@ body{
 }
 .required{
   color: $red;
+}
+.col-2{
+  width: 20%;
+}
+.col-6{
+  width: 60%;
+}
+.col-5{
+  width: 50%;
 }

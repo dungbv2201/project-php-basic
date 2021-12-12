@@ -2,11 +2,15 @@
 
 
 function index(){
-	include_once ROOT_DIR.'/resources/views/admin/users/index.php';
+	return renderView('admin/users/index', [
+		"title" => "users",
+	]);
 }
 
 function create(){
-	dd('hello wrold');
+	return renderView('admin/users/create', [
+		"title" => "users create",
+	]);
 }
 
 function show($id){

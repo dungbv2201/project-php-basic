@@ -27,6 +27,24 @@
         height: 40px;
         display: flex;
         align-items: center;
+        &.active{
+          a{
+            //pointer-events: none;
+            color: $white;
+          }
+        }
+        a{
+          display: flex;
+          width: 100%;
+          text-decoration: none;
+          color: black;
+          span{
+            &.title{
+              line-height: 40px;
+              flex-grow: 1;
+            }
+          }
+        }
         &.brand{
           text-align: center;
           height: 60px;
@@ -57,7 +75,6 @@
           align-items: center;
           margin-right: 5px;
           display: block;
-          margin-top: 5px;
         }
       }
     }

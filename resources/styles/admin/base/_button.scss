@@ -1,3 +1,13 @@
 button{
-	box-shadow: 0 14px 26px -12px rgb(244 67 54 / 42%), 0 4px 23px 0 rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(244 67 54 / 20%);
+	//box-shadow: 0 14px 26px -12px rgb(244 67 54 / 42%), 0 4px 23px 0 rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(244 67 54 / 20%);
+}
+.btn{
+	padding: 10px 15px;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	&.btn-primary{
+		background: $blue-2;
+		border-radius: 4px;
+	}
 }
