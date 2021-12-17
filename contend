@@ -1,0 +1,136 @@
+<!-- content -->
+    <section class="wrapper">
+        <div class="products">
+            <ul>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fartcoffee.vn%2Fwp-content%2Fuploads%2F2020%2F09%2F8-loi-ich-to-lon-cua-viec-uong-ca-phe-den-nguyen-chat-khong-duong.jpg&imgrefurl=https%3A%2F%2Fartcoffee.vn%2Ftac-dung-uong-ca-phe-den-khong-duong&tbnid=gZuxsFWtCUZtwM&vet=12ahUKEwip-cbewOr0AhVIet4KHdgVCQQQMygFegUIARC9AQ..i&docid=_WQixn36axLISM&w=600&h=400&itg=1&q=cafe%20%C4%91en&ved=2ahUKEwip-cbewOr0AhVIet4KHdgVCQQQMygFegUIARC9AQ
+                            alt=">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">cafe đen</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">15000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fhipbcoffee.com%3A8443%2Fstorage%2Fpublic%2F1-ca-phe-sua-1586320543.jpg&imgrefurl=https%3A%2F%2Fhipbcoffee.com%2Fproduct%2F4%2Fca-phe-sua&tbnid=7fQ0kh6a5tUgKM&vet=12ahUKEwjhoPOfwer0AhVNU5QKHU1qCd0QMygEegUIARC-AQ..i&docid=DenfCQolLez0KM&w=800&h=800&itg=1&q=cafe%20s%E1%BB%AFa&ved=2ahUKEwjhoPOfwer0AhVNU5QKHU1qCd0QMygEegUIARC-AQ"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">cafe sữa</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">17000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fartcoffee.vn%2Fwp-content%2Fuploads%2F2020%2F07%2Fbac-xiu-la-gi_-cach-pha-ca-phe-bac-xiu-chuan-nguoi-hoa-sai-gon.jpg&imgrefurl=https%3A%2F%2Fartcoffee.vn%2Fbac-xiu-la-gi-cach-pha-ca-phe-bac-xiu-ngon&tbnid=ByRuin0iNjwjsM&vet=12ahUKEwihgtPgwer0AhXGxIsBHSnBDbUQMygJegUIARC7AQ..i&docid=tNu-Hfe6L97ToM&w=600&h=400&itg=1&q=b%E1%BA%A1c%20x%E1%BB%89u&ved=2ahUKEwihgtPgwer0AhXGxIsBHSnBDbUQMygJegUIARC7AQ"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">bạc xỉu</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">17000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.tgdd.vn%2FFiles%2F2020%2F05%2F29%2F1259231%2Fphan-biet-bot-matcha-va-bot-tra-xanh-cach-dung-va-7.jpg&imgrefurl=https%3A%2F%2Fwww.dienmayxanh.com%2Fvao-bep%2Fphan-biet-bot-matcha-va-bot-tra-xanh-02607&tbnid=uoB24RKYTcSSPM&vet=12ahUKEwjF2ICNwur0AhUEYJQKHYc9BHMQMygJegUIARDAAQ..i&docid=o77SJYPaAHbzNM&w=730&h=487&itg=1&q=matcha%20&ved=2ahUKEwjF2ICNwur0AhUEYJQKHYc9BHMQMygJegUIARDAAQ"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">matcha</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">20000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.tgdd.vn%2F2021%2F05%2FCookRecipe%2FGalleryStep%2Fhoan-thanh-322.jpg&imgrefurl=https%3A%2F%2Fwww.dienmayxanh.com%2Fvao-bep%2Fcach-lam-matcha-da-xay-thom-ngon-kho-cuong-don-gian-ngay-tai-10518&tbnid=B18pxJoxmTQsnM&vet=12ahUKEwjFg6DOwur0AhVIEnAKHVipCwIQMygEegUIARC4AQ..i&docid=S9uFIWDJZdfK5M&w=800&h=800&itg=1&q=matcha%20%C4%91%C3%A1%20xay%20kem%20t%C6%B0%C6%A1i&ved=2ahUKEwjFg6DOwur0AhVIEnAKHVipCwIQMygEegUIARC4AQ"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">matcha đá xay
+                        </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">25000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fclassiccoffee.com.vn%2Fupload%2FpO5v1o2PI8kBPixUYYjdvy6oyOWkTjUi70O.jpg&imgrefurl=https%3A%2F%2Fclassiccoffee.com.vn%2Ftin-tuc%2Fcach-lam-cookie-da-xay-voi-banh-oreo-ngon-tuyet-144.html&tbnid=1SmL2DhaSKMvCM&vet=12ahUKEwjbx-viw-r0AhVUxIsBHagpD2UQMygDegUIARC6AQ..i&docid=Ao400I4ZBmG_JM&w=800&h=600&itg=1&q=chocolate%20%C4%91%C3%A1%20xay&hl=vi&ved=2ahUKEwjbx-viw-r0AhVUxIsBHagpD2UQMygDegUIARC6AQ"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">cookie đá xay</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">25000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fvndhomecoffee.com%2Fpublic%2Fuploads%2Fimages%2FMENU%2FCA-PHE-DA-XAY%2Fmocha-da-xay%2Fhazelnut-coffee-ice-blended-1590640022.jpg&imgrefurl=https%3A%2F%2Fvndhomecoffee.com%2Fchocolate-da-xay-301.html&tbnid=4JkIVxr19dEG6M&vet=12ahUKEwjm06LXw-r0AhUVI6YKHR29AmMQMygCegUIARC3AQ..i&docid=kzHnfB7hlyj8hM&w=600&h=400&itg=1&q=chocolate%20%C4%91%C3%A1%20xay&ved=2ahUKEwjm06LXw-r0AhUVI6YKHR29AmMQMygCegUIARC3AQ"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">mocha</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">25000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.huongnghiepaau.com%2Fwp-content%2Fuploads%2F2017%2F09%2Fcacao-da-ngot.jpg&imgrefurl=https%3A%2F%2Fwww.huongnghiepaau.com%2Fcach-pha-cacao-sua-da-ngon-uong-la-ghien&tbnid=vWhlRSV_U_avpM&vet=12ahUKEwiD7JSkxOr0AhXIBKYKHWzjAP4QMygAegUIARCxAQ..i&docid=ppxR2fuNK4kmQM&w=600&h=400&itg=1&q=cacao%20%C4%91%C3%A1&ved=2ahUKEwiD7JSkxOr0AhXIBKYKHWzjAP4QMygAegUIARCxAQ"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">cacao đá</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">20000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
