@@ -7,21 +7,18 @@ function resolve($routes){
 		if(!$notFound){
 			break;
 		}
-        $arrayUrl = explode('/',$route['url']);
-        unset($arrayUrl[0]);
-		$uri = $_SERVER['REQUEST_URI'];
+        $arrayUrl = explode('/',ltrim($route['url'], '/'));
+		$uri = $_SERVER['PATH_INFO'] ?? '/';
 		if(strpos($uri, "?")){
 			$uri = explode("?",$uri);
 			$uri = $uri[0];
 		}
-        $arrayUri = explode(	'/',$uri);
-		unset($arrayUri[0]);
-
+        $arrayUri = explode(	'/',ltrim($uri, '/'));
 		if($_SERVER['REQUEST_METHOD'] === $route['method'] && (count($arrayUrl)) === count($arrayUri)){
-            $params = [];
+			$params = [];
             foreach ($arrayUrl as $key => $value){
-				$isLast = $key === (count($arrayUrl));
-				$hasParam = strpos($value,":") === 0;
+				$isLast = $key === (count($arrayUrl)-1);
+				$hasParam = $value[0] === ':';
                 $uri =  $arrayUri[$key];
                 if($hasParam){
                     $params[] = $uri;
