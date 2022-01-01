@@ -1,9 +1,22 @@
 <div class="content">
 	<div class="wrap-table">
-		<form action="">
+		<form action="/admin/users/store" method="post">
 			<div class="form-group">
 				<div class="col-2">
-					<lebal>First Name</lebal>
+					<label for="first-name">First Name <span class="required">*</span></label>
+				</div>
+				<div class="col-5">
+					<input
+						type="text"
+						class="form-control"
+						id="first-name"
+						value="<?= old('first_name')?>"
+					>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-2">
+					<label>Last Name <span class="required">*</span></label>
 				</div>
 				<div class="col-5">
 					<input type="text" class="form-control">
@@ -11,7 +24,7 @@
 			</div>
 			<div class="form-group">
 				<div class="col-2">
-					<lebal>Last Name</lebal>
+					<label>Email <span class="required">*</span></label>
 				</div>
 				<div class="col-5">
 					<input type="text" class="form-control">
@@ -19,15 +32,7 @@
 			</div>
 			<div class="form-group">
 				<div class="col-2">
-					<lebal>Email</lebal>
-				</div>
-				<div class="col-5">
-					<input type="text" class="form-control">
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="col-2">
-					<lebal>Password</lebal>
+					<label>Password <span class="required">*</span></label>
 				</div>
 				<div class="col-5">
 					<input type="text" class="form-control">

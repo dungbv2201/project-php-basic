@@ -4,16 +4,16 @@ define('MESSAGE_VALIDATE', [
 	'max' => 'This field must be at least :max characters.'
 ]);
 
-function validate($rules){
+function validate($rules, $data ){
 	$_SESSION['errorsValidate'] = [];
+	$_SESSION['oldData'] = [];
 	foreach ($rules as $key => $rule){
-		$data = getDataRequest();
-		foreach ($rule as $callback){
+		foreach ($rule as  $callback){
 			$agr = explode(':', $callback);
 			if(count($agr) > 1){
-				$invalid = call_user_func($agr[0],$data,$agr[1]);
+				$invalid = call_user_func($agr[0],$data[$key] ?? null,$agr[1]);
 			}else{
-				$invalid = call_user_func($callback,$data, $key);
+				$invalid = call_user_func($callback,$data[$key] ?? null, $key);
 			}
 			if($invalid){
 				$_SESSION['errorsValidate'][$key][] = $invalid;
@@ -26,8 +26,16 @@ function validate($rules){
 
 function required($value, $arg){
 	$msg = null;
-	if($value != 0 && !$value){
+	if($value != 0 || !$value){
 		$msg =  MESSAGE_VALIDATE['required'];
+	}
+	return $msg;
+}
+
+function email($value, $arg){
+	$msg = null;
+	if (!filter_var($value, FILTER_VALIDATE_EMAIL)) {
+		$msg = "Invalid email format";
 	}
 	return $msg;
 }

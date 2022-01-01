@@ -21,3 +21,7 @@ copy file .env.example => .env  => config your database
 ## Migrate database
 
 `php artisan migrate`
+
+## Seed admin
+
+`php artisan seed:admin`

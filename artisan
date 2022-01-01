@@ -1,5 +1,4 @@
 <?php
-require_once __DIR__.'/app/connectDb.php';
 require_once __DIR__."/vendor/autoload.php";
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
@@ -11,6 +10,9 @@ switch ($_SERVER['argv'][1]){
         break;
     case 'migrate':
         migrate(connectDb());
+		break;
+	case 'seed:admin':
+		seed();
 }
 
 function runServe(){
@@ -22,4 +24,10 @@ function migrate($pdo){
     require_once __DIR__.'/migrations/migrate.php';
     echo "\e[32mHello Kitty! \e[31m<3 \e[32m \n";
     runMigrations($pdo);
+}
+
+function seed(){
+	require_once __DIR__.'/migrations/seeds/admin.php';
+	echo "\e[32mHello Kitty! \e[31m<3 \e[32m \n";
+	echo adminSeed();
 }

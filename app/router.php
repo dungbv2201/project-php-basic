@@ -3,30 +3,33 @@ require_once __DIR__."/middleware.php";
 
 function resolve($routes){
     $notFound = true;
+	$uri = $_SERVER['PATH_INFO'] ?? '/';
+	if(strpos($uri, "?")){
+		$uri = explode("?",$uri);
+		$uri = $uri[0];
+	}
+	$arrayUri = explode(	'/',ltrim($uri, '/'));
     foreach ($routes as $route){
 		if(!$notFound){
 			break;
 		}
         $arrayUrl = explode('/',ltrim($route['url'], '/'));
-		$uri = $_SERVER['PATH_INFO'] ?? '/';
-		if(strpos($uri, "?")){
-			$uri = explode("?",$uri);
-			$uri = $uri[0];
-		}
-        $arrayUri = explode(	'/',ltrim($uri, '/'));
 		if($_SERVER['REQUEST_METHOD'] === $route['method'] && (count($arrayUrl)) === count($arrayUri)){
 			$params = [];
             foreach ($arrayUrl as $key => $value){
-				$isLast = $key === (count($arrayUrl)-1);
-				$hasParam = $value[0] === ':';
-                $uri =  $arrayUri[$key];
+				$isLast = $value == end($arrayUrl);
+				$hasParam = ($value[0] ?? null) === ':';
+                $url =  $arrayUri[$key];
                 if($hasParam){
-                    $params[] = $uri;
+                    $params[] = $url;
                     if(!$isLast){
 						continue;
 					}
                 }
-                if(($value === $uri || $hasParam ) && $isLast){
+				if($url !== $value && !$isLast){
+					break;
+				}
+                if(($value === $arrayUri[$key] || $hasParam ) && $isLast){
 					$notFound = false;
 					try{
 						require_once dirname(__DIR__).$route['handler'];
@@ -36,6 +39,11 @@ function resolve($routes){
 								if(!$rs){
 									die;
 								}
+							}
+						}else{
+							if(($_SESSION['auth']?? false) && ($route['namespace']?? null) ==='admin'){
+								header("Location: /admin/users");
+								die;
 							}
 						}
 						return call_user_func_array($route['action'], $params);
