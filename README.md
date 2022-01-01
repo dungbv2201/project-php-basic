@@ -10,7 +10,7 @@ copy file .env.example => .env  => config your database
 
 ## Combine js, css
 
-`npx run mix`
+`npx mix`
 
 `npx mix watch`
 
