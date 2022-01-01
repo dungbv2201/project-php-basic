@@ -8,6 +8,16 @@
     ],
     "require": {
         "vlucas/phpdotenv": "^5.4",
-        "ext-pdo": "*"
+        "ext-pdo": "*",
+        "phpmailer/phpmailer": "^6.5"
+    },
+    "autoload": {
+        "files": [
+            "./helpers/utils.php",
+            "./helpers/mail.php",
+            "./helpers/const.php",
+            "./app/validate.php",
+            "./app/connectDb.php"
+        ]
     }
 }

@@ -29,7 +29,7 @@ body{
       width: 60px;
       height: 60px;
       position: absolute;
-      top: -20px;
+      top: -28px;
       left: 15px;
       border-radius: 3px;
       background: $blue-2;
@@ -62,4 +62,10 @@ body{
 }
 .col-5{
   width: 50%;
+}
+.invalid{
+  display: block;
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
 }

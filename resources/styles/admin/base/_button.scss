@@ -6,8 +6,23 @@ button{
 	border: 0;
 	outline: 0;
 	cursor: pointer;
+	border-radius: 4px;
+
 	&.btn-primary{
 		background: $blue-2;
-		border-radius: 4px;
+	}
+	&.btn-warning{
+		background: $yellow-2;
+		color: #ffffff;
+		&:hover{
+			color: black;
+		}
+	}
+	&.btn-danger{
+		background: $red-light;
+		color: #ffffff;
+		&:hover{
+			color: black;
+		}
 	}
 }

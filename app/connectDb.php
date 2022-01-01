@@ -7,7 +7,6 @@ function connectDb(){
     $username = $config['username'];
     $password = $config['password'];
     $dbName = $config['db_name'];
-    $connect = null;
     try {
         $connect = new PDO("mysql:host=$servername;dbname=$dbName", $username, $password);
         $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
