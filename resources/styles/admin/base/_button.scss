@@ -1,28 +1,21 @@
 button{
 	//box-shadow: 0 14px 26px -12px rgb(244 67 54 / 42%), 0 4px 23px 0 rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(244 67 54 / 20%);
 }
+$colors: ("success": $green-1, "primary": $blue-1, "danger": $red, "warning": $yellow-1);
 .btn{
 	padding: 10px 15px;
 	border: 0;
 	outline: 0;
 	cursor: pointer;
 	border-radius: 4px;
-
-	&.btn-primary{
-		background: $blue-2;
+	color: #ffffff;
+	&:hover{
+		color: black;
 	}
-	&.btn-warning{
-		background: $yellow-2;
-		color: #ffffff;
-		&:hover{
-			color: black;
-		}
-	}
-	&.btn-danger{
-		background: $red-light;
-		color: #ffffff;
-		&:hover{
-			color: black;
-		}
+}
+@each $type, $color in $colors {
+	@debug $color;
+	.btn-#{$type}{
+		background: $color !important;
 	}
 }

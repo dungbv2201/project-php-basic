@@ -15,10 +15,10 @@
 			<header>
 				<h2>Sign In</h2>
 				<span class="invalid">
-				<?= $_SESSION['loginFail'] ?? null ?>
+				<?= getSession(LOGIN_FAIL) ?>
 			</span>
 			</header>
-			<form action="/admin/login" method="POST">
+			<form action="/admin/login" method="POST" enctype="multipart/form-data">
 				<div class="form-group d-block">
 					<label for="email">Email <span class="required">*</span></label>
 					<input
@@ -41,10 +41,6 @@
 						class="form-control" />
 					<?= renderError('password')?>
 				</div>
-<!--				<div class="form-group">-->
-<!--					<input type="checkbox" class="" id="remember-me"name="password"/>-->
-<!--					<label style="margin:0;margin-left: 5px" for="remember-me">Remember me</label>-->
-<!--				</div>-->
 				<button>Submit</button>
 			</form>
 		</div>
@@ -52,7 +48,5 @@
 </body>
 </html>
 <?php
-	unset($_SESSION['errorsValidate']);
-	unset($_SESSION['oldData']);
-	unset($_SESSION['loginFail']);
+unsetSession(ERROR_VALIDATE,OLD_DATA, LOGIN_FAIL);
 ?>

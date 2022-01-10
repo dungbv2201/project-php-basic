@@ -28,7 +28,7 @@ function store(){
 		'first_name' => ['required'],
 		'last_name' => ['required'],
 		'email' => ['required', 'email'],
-		'password' => ['required']
+		'password' => ['required'],
 	], $data);
 	if(!$fails){
 		return back();
