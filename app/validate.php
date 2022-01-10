@@ -5,8 +5,8 @@ define('MESSAGE_VALIDATE', [
 ]);
 
 function validate($rules, $data ){
-	$_SESSION['errorsValidate'] = [];
-	$_SESSION['oldData'] = [];
+	setSession(ERROR_VALIDATE, []);
+	setSession(OLD_DATA, []);
 	foreach ($rules as $key => $rule){
 		foreach ($rule as  $callback){
 			$agr = explode(':', $callback);
@@ -21,7 +21,7 @@ function validate($rules, $data ){
 		}
 	}
 
-	return empty($_SESSION['errorsValidate']);
+	return empty(getSession(ERROR_VALIDATE));
 }
 
 function required($value, $arg){

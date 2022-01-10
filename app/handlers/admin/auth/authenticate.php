@@ -13,22 +13,20 @@ function singIn(){
 	if(!$fails){
 		return back();
 	}
-	$pdo = connectDb();
-
-	$smt = $pdo->prepare("SELECT * FROM admins WHERE email = ?");
+	$smt = connectDb()->prepare("SELECT * FROM admins WHERE email = ?");
 	$smt->execute([$data['email']]);
 	$admin = $smt->fetch(PDO::FETCH_OBJ);
 
 	if(password_verify($data['password'], $admin->password ?? null)){
-		$_SESSION['auth'] = [
+		setSession(AUTH, [
 			"user" => $admin->email,
 			"fullName" => $admin->first_name.' '.$admin->last_name,
 			"id" => $admin->id
-		];
+		]);
 		return redirect('/admin/users');
 	}
 	setOldData($data);
-	$_SESSION['loginFail'] = 'Email or password is not correct';
+	setSession(LOGIN_FAIL, 'Email or password is not correct');
 	return back();
 }
 

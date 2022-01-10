@@ -70,25 +70,42 @@ function redirect($route)
 
 function renderError($field)
 {
-	if (isset($_SESSION['errorsValidate'][$field])) {
-		return '<span class="invalid">' . $_SESSION['errorsValidate'][$field][0] . '</span>';
+	if (isset($_SESSION[ERROR_VALIDATE][$field])) {
+		return '<span class="invalid">' . $_SESSION[ERROR_VALIDATE][$field][0] . '</span>';
 	}
 }
 
 function old($field)
 {
-	return $_SESSION['oldData'][$field] ?? null;
+	return $_SESSION[OLD_DATA][$field] ?? null;
 }
 
 function setOldData($data)
 {
-	$_SESSION['oldData'] = $data;
+	$_SESSION[OLD_DATA] = $data;
 }
 
 function authUser()
 {
 	return $_SESSION['auth'] ?? [
-			"fullName" => null,
-			"id" => null,
-		];
+		"fullName" => null,
+		"id" => null,
+	];
+}
+
+function setSession($key, $value)
+{
+	$_SESSION[$key] = $value;
+}
+
+function getSession($key)
+{
+	return $_SESSION[$key] ?? null;
+}
+
+function unsetSession(...$agrs)
+{
+	foreach ($agrs as $session) {
+		unset($_SESSION[$session]);
+	}
 }
